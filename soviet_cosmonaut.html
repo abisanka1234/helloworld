@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous"
+        >
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="ussr.css">
+         <link href="style.css" rel="stylesheet">
+        <title>Rcciit DASHBOARD</title>
+    </head>
+    <body id="body">
+        <!-- <div class="container"> -->
+        <div class="row">
+            <div class="col-md-3">
+                <div id="sidebar">
+                    <div class="sidebar__title">
+                        <div class="sidebar__img">
+                            <img
+                                src="RCC_LOGO.png"
+                                height="50px"
+                                width="50px"
+                                alt="logo"
+                            >
+                            <div class="main_title">Rcc Institute Of Information Technology</div>
+                        </div>
+                        <i
+                            onclick="closeSidebar()"
+                            class="fa fa-times"
+                            id="sidebarIcon"
+                            aria-hidden="true"
+                        ></i>
+                    </div>
+                    <div class="sidebar__menu">
+                        <div class="sidebar__link active_menu_link">
+                            <i class="fa fa-home"></i>
+                            <a href="#">Dashboard</a>
+                        </div>
+                        <div class="sidebar__link">
+                            <i class="fa fa-wrench" aria-hidden="true"></i>
+                            <a href="#">Courses</a>
+                        </div>
+                        <div class="sidebar__link">
+                            <i class="fa fa-building-o"></i>
+                            <a href="#">Routine</a>
+                        </div>
+                        <div class="sidebar__link">
+                            <i class="fa fa-user-secret"></i>
+                            <a href="#">CA Marks</a>
+                        </div>
+                        <div class="sidebar__link">
+                            <i class="fa fa-sign-out"></i>
+                            <a href="#">Notes</a>
+                        </div>
+                        <div class="sidebar__link">
+                            <i class="fa fa-calendar-check-o"></i>
+                            <a href="#">Assignments</a>
+                        </div>
+                        <div class="sidebar__link">
+                            <i class="fa fa-files-o"></i>
+                            <a href="#">Change Password</a>
+                        </div>
+                        <div class="sidebar__logout">
+                            <i class="fa fa-power-off"></i>
+                            <a href="#">Log out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <nav class="navbar login-navbar">
+                    <div class="nav_icon" onclick="toggleSidebar()">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </div>
+                    <div class="navbar__left">
+                        <a class="active_link login-link" href="#">Student</a>
+                    </div>
+                    <div class="navbar__right">
+                        <a href="#">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-clock-o" aria-hidden="true"> Contact</i>
+                        </a>
+                        <a href="#">
+                            <img width="30" src="assets/avatar.svg" alt="">
+                            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </nav>
+                <main>
+                    <div class="main__container">
+                       <div class="main_form_container" id="container" >
+                        <div class="form-container sign-up-container">  
+                          <form action="#">
+                            <h2  class="head_text">Create Account Student</h2>
+                            <div class="social-container">
+                              <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                              <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                              <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                            <span>or use your email for registration</span>
+                            <input type="text" placeholder="Name" />
+                            <input type="email" placeholder="Email" />
+                            <input type="password" placeholder="Password" />
+                            <button>Sign Up</button>
+                          </form>
+                        </div>
+                      
+                    
+                      <div class="form-container sign-up-container" id="teacherForm">  
+                        <form action="#">
+                          <h2 class="head_text">Create Account Teacher</h2>
+                          <div class="social-container">
+                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                          </div>
+                          <span>or use your email for registration</span>
+                          <input type="text" placeholder="Employee Id" />
+                          <input type="text" placeholder="Employee Email" />
+                          <input type="password" placeholder="Password" />
+                          <button>Sign Up</button>
+                        </form>
+                      </div>
+                  
+                      
+                        <div class="form-container sign-in-container">
+                          <form action="#">
+                            <h1>Sign in</h1>
+                            <div class="social-container">
+                              <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                              <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                              <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                            <span>or use your account</span>
+                            <input type="email" placeholder="Email" />
+                            <input type="password" placeholder="Password" />
+                            <a href="#">Forgot your password?</a>
+                            <button>Sign In</button>
+                          </form>
+                        </div>
+                      
+                      
+                      
+                      
+                      
+                        <div class="overlay-container">
+                          <div class="overlay">
+                            <div class="overlay-panel overlay-left">
+                              <h1>Welcome Back!</h1>
+                              <p>To keep connected with us please login with your personal info</p>
+                              <button class="ghost" id="signIn">Sign In</button>
+                            </div>
+                            <div class="overlay-panel overlay-right">
+                              <h1>Hello, Friend!</h1>
+                              <p>Enter your personal details and start journey with us</p>
+                              <button class="ghost" id="signUp">Teacher</button>
+                              <button class="ghost" onclick="student()" id="student">Student</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div> 
+                    </div>
+                </main>
+            </div>
+      
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+        <script src="index.js"></script>
+        <script src="dc.js"></script>
+    </body>
+</html>
